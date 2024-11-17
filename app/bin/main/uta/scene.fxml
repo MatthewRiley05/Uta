@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
 
-
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uta.FXMLController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uta.FXMLController">
    <children>
-      <Label fx:id="label" text="Label" />
+      <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#fa535e" height="380.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="240.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2147483647" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Rectangle>
+            <Text fx:id="title" fill="WHITE" text="Uta" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            </Text>
+            <SVGPath content="M199.5 100C199.5 154.952 154.952 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C154.952 0.5 199.5 45.0477 199.5 100ZM169.5 100C169.5 138.384 138.384 169.5 100 169.5C61.6162 169.5 30.5 138.384 30.5 100C30.5 61.6162 61.6162 30.5 100 30.5C138.384 30.5 169.5 61.6162 169.5 100ZM100 170.5C138.936 170.5 170.5 138.936 170.5 100C170.5 61.0639 138.936 29.5 100 29.5C61.0639 29.5 29.5 61.0639 29.5 100C29.5 138.936 61.0639 170.5 100 170.5ZM179.5 100C179.5 143.907 143.907 179.5 100 179.5C56.0934 179.5 20.5 143.907 20.5 100C20.5 56.0934 56.0934 20.5 100 20.5C143.907 20.5 179.5 56.0934 179.5 100ZM100 180.5C144.459 180.5 180.5 144.459 180.5 100C180.5 55.5411 144.459 19.5 100 19.5C55.5411 19.5 19.5 55.5411 19.5 100C19.5 144.459 55.5411 180.5 100 180.5ZM189.5 100C189.5 149.43 149.43 189.5 100 189.5C50.5705 189.5 10.5 149.43 10.5 100C10.5 50.5705 50.5705 10.5 100 10.5C149.43 10.5 189.5 50.5705 189.5 100ZM100 190.5C149.982 190.5 190.5 149.982 190.5 100C190.5 50.0182 149.982 9.5 100 9.5C50.0182 9.5 9.5 50.0182 9.5 100C9.5 149.982 50.0182 190.5 100 190.5Z" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowSpan="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </SVGPath>
+            <ImageView fitHeight="150.0" fitWidth="200.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5" scaleZ="1.5" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@UtaPointingNoBG.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="50.0" top="50.0" />
+               </GridPane.margin>
+            </ImageView>
+         </children>
+      </GridPane>
    </children>
 </StackPane>
